@@ -1,6 +1,6 @@
 # Datacenter Status
 
-Datacenter Status is a small full-stack monitoring application for network and service incidents affecting datacenter providers. It combines Microsoft Outlook mailbox ingestion with optional Cachet data, stores normalized provider and incident records in a database, and exposes a FastAPI API consumed by a React dashboard.
+Datacenter Status Monitor (Dashboard) is a small full-stack monitoring application for network and service incidents affecting datacenter providers. It combines Microsoft Outlook mailbox ingestion with optional data, stores normalized provider and incident records in a database, and exposes a FastAPI API consumed by a React dashboard.
 
 ## Project Structure
 
