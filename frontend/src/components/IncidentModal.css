@@ -1,0 +1,171 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  z-index: 9999;
+}
+
+/* ✅ Requirement #6: status accent bar */
+.modal-card {
+  width: min(900px, 100%);
+  max-height: 85vh;
+  overflow: auto;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 18px 55px rgba(0,0,0,0.35);
+  border-top: 6px solid #d0d0d0;
+}
+
+.modal-accent--down {
+  border-top-color: #d9534f;
+}
+
+.modal-accent--up {
+  border-top-color: #2eae60;
+}
+
+.modal-accent--waiting {
+  border-top-color: #f0ad4e;
+}
+
+.modal-accent--performance {
+  border-top-color: #5bc0de;
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.modal-subtitle {
+  margin: 6px 0 0 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.modal-close {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-empty {
+  padding: 10px 2px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ✅ Requirement #5: distinct provider summary block */
+.summary-block {
+  border: 1px solid #e6ebf2;
+  background: #f4f6fa;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.summary-item--wide {
+  grid-column: 1 / -1;
+}
+
+.summary-label {
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+
+.summary-value {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.incident-block {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px;
+  background: #ffffff;
+}
+
+.incident-id,
+.incident-name,
+.incident-status,
+.incident-time {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.incident-message-box {
+  margin-top: 10px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.incident-message-label {
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+/* ✅ Requirement #4: long messages auto-collapsed */
+.incident-message-pre {
+  margin: 0;
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.35;
+
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 6px; /* space for scrollbar */
+}
+
+.muted {
+  opacity: 0.75;
+}
+
+/* ✅ Requirement #3: postal codes as chips */
+.postal-chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.postal-chip {
+  background: #eef3ff;
+  border: 1px solid #d8e4ff;
+  border-radius: 16px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1f2d3d;
+}

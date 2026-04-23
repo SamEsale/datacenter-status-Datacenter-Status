@@ -1,0 +1,141 @@
+/* Background */
+body {
+  background-color: #3b3b3b;
+}
+
+/* Wrapper */
+.dashboard-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: clamp(12px, 3vw, 28px);
+}
+
+/* Title */
+.dashboard-title {
+  font-weight: 800;
+  text-align: center;
+  margin: clamp(14px, 3vw, 28px) 0 clamp(12px, 2.5vw, 22px) 0;
+  font-size: clamp(28px, 5vw, 60px);
+  line-height: 1.05;
+  color: #FFFFFF !important;
+  letter-spacing: 0.5px;
+}
+
+/* Grid: default = PHONE (1 column) */
+.status-grid {
+  display: grid;
+
+  /* 10px gap in both directions */
+  gap: 10px !important;
+  row-gap: 10px !important;
+  column-gap: 10px !important;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* TABLET: 2 columns */
+@media (min-width: 640px) {
+  .status-grid {
+  display: grid;
+
+  /* 10px gap in both directions */
+  gap: 10px !important;
+  row-gap: 10px !important;
+  column-gap: 10px !important;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+}
+
+/* DESKTOP: 3 columns */
+@media (min-width: 1024px) {
+  .status-grid {
+  display: grid;
+
+  /* 10px gap in both directions */
+  gap: 10px !important;
+  row-gap: 10px !important;
+  column-gap: 10px !important;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+}
+
+/* LARGE DESKTOP: 4 columns */
+@media (min-width: 1400px) {
+  .status-grid {
+  display: grid;
+
+  /* 10px gap in both directions */
+  gap: 10px !important;
+  row-gap: 10px !important;
+  column-gap: 10px !important;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+}
+
+/* Last updated timestamp */
+.dashboard-updated {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: -12px;
+  margin-bottom: 20px;
+}
+
+/* API fallback warning */
+.dashboard-error {
+  margin: 6px 0 0 0;
+  text-align: center;
+  color: #ffd2d2;
+  font-size: 12px;
+}
+
+.dashboard-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.dashboard-meta-row .dashboard-updated {
+  text-align: center;
+}
+
+.dashboard-search-input {
+  position: absolute;
+  right: 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #eaeaea;
+  font-weight: 500;
+}
+
+.dashboard-search-input:focus {
+  box-shadow: 0 0 0 2px #4caf50;
+}

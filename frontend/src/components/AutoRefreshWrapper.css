@@ -1,0 +1,7 @@
+.auto-refresh-wrapper {
+  transition: opacity 0.35s ease;
+}
+
+.auto-refresh-wrapper.fade {
+  opacity: 0.55;
+}

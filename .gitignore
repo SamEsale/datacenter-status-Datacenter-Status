@@ -1,0 +1,62 @@
+# ---- Python ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- OS/editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- Logs / temp ----
+*.log
+tmp_*
+*.tmp
+
+# ---- Database dumps / backups ----
+*.dump
+*.sql
+*.sqlite
+*.db
+
+# ---- Node / Vite ----
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- Env files ----
+# Keep .env.production tracked if you want it committed (optional)
+frontend/.env
+backend/.env
+.env
+
+# Backups
+*.bak
+*.bak.*
+backend/*.bak*
+backend/*.py.bak*
+
+# One-off scripts (keep local)
+*_check*.py
+tmp_*.py
+db_check.py
+db_schema.py
+list_providers.py
+check_*.py
+
+# Local docker compose (optional: commit only if you want)
+docker-compose.yml

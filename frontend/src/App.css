@@ -1,0 +1,7 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none;   /* <-- IMPORTANT: remove 1280px clamp */
+  text-align: initial;
+}

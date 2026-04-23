@@ -1,0 +1,20 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;          /* <-- IMPORTANT: remove Vite flex centering */
+  background: #3b3b3b;     /* matches your dashboard background */
+}

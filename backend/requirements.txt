@@ -1,0 +1,11 @@
+fastapi==0.121.1
+python-dotenv==1.2.1
+requests==2.32.3
+uvicorn[standard]==0.40.0
+# Persistence + migrations
+SQLAlchemy==2.0.43
+alembic==1.16.5
+psycopg[binary]==3.2.10
+
+# Microsoft Graph auth (client credentials)
+msal==1.33.0

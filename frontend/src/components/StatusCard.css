@@ -1,0 +1,106 @@
+/* src/components/StatusCard.css */
+
+.status-card {
+  width: 100%;
+  display: block;
+  padding: 18px;
+  border-radius: 12px;
+  border: 2px solid #2b2b2b;
+  background: #ffffff;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.35);
+  text-align: left;
+
+  /* IMPORTANT for <button> elements */
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+/* Make cards clickable (button) without killing the visual style */
+.status-card.status-card-clickable {
+  cursor: pointer;
+  border: 2px solid #2b2b2b; /* keep consistent border when button resets apply */
+}
+
+.status-card.status-card-clickable:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.35);
+}
+
+.status-card.status-card-clickable:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+.status-card.status-card-clickable:focus-visible {
+  outline: 3px solid rgba(59, 130, 246, 0.6);
+  outline-offset: 2px;
+}
+
+/* --- Header layout (icon top-left, title left) --- */
+.status-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-bottom: 50px; /* increased spacing between title and status */
+}
+
+
+.status-title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #111;
+}
+
+.status-details {
+  font-size: 14px;
+  color: #111;
+}
+
+.status-details p {
+  margin: 6px 0 0 0;
+}
+
+/* --- FORCE ICON SIZE (prevents giant icons) --- */
+.status-icon {
+  width: 32px;
+  height: 32px;
+  max-width: 32px;
+  max-height: 32px;
+  flex: 0 0 32px;
+  object-fit: contain;
+}
+
+/* --- State background colors --- */
+.status-card.up {
+  background: #ffffff;
+}
+
+/* Performance issues */
+.status-card.performance {
+  background: #f6d89b; /* amber-ish */
+}
+
+/* Minor outage (waiting) */
+.status-card.waiting {
+  background: #fff1b8; /* yellow */
+}
+
+/* Down / major outage */
+.status-card.down {
+  background: #db7948;
+  color: #ffffff;
+}
+
+/* Keep text readable on down background */
+.status-card.down .status-title,
+.status-card.down .status-details {
+  color: #ffffff;
+}

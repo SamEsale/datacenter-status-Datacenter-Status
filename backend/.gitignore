@@ -1,0 +1,14 @@
+.env
+
+# macOS
+.DS_Store
+
+# Python cache / bytecode
+__pycache__/
+*.pyc
+
+# Pytest cache
+.pytest_cache/
+
+# Local backups
+app.py.bak
